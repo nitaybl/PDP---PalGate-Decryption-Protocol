@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <Transition motion:constraintSetEnd="@id/vpTileAnimationEnd" motion:constraintSetStart="@id/vpTileAnimationStart" motion:duration="1000">
+        <KeyFrameSet />
+    </Transition>
+    <ConstraintSet android:id="@id/vpTileAnimationStart">
+        <Constraint android:id="@id/vpCloseButton" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="0.0dip" android:rotation="45.0" motion:layout_constraintBottom_toBottomOf="@id/gateColor" motion:layout_constraintEnd_toEndOf="@id/gateColor" motion:layout_constraintStart_toStartOf="@id/gateColor" motion:layout_constraintTop_toTopOf="@id/gateColor" />
+        <Constraint android:id="@id/gateIcon" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="0.0dip" motion:layout_constraintBottom_toBottomOf="@id/gateColor" motion:layout_constraintEnd_toEndOf="@id/gateColor" motion:layout_constraintStart_toStartOf="@id/gateColor" motion:layout_constraintTop_toTopOf="@id/gateColor" />
+        <Constraint android:id="@id/itemVpCameraCl" android:visibility="invisible" android:layout_width="60.0dip" android:layout_height="60.0dip" motion:layout_constraintBottom_toBottomOf="@id/gateColor" motion:layout_constraintEnd_toEndOf="@id/gateColor" motion:layout_constraintStart_toStartOf="@id/gateColor" motion:layout_constraintTop_toTopOf="@id/gateColor" />
+        <Constraint android:id="@id/itemVpRelayCl" android:visibility="invisible" android:layout_width="60.0dip" android:layout_height="60.0dip" motion:layout_constraintBottom_toBottomOf="@id/gateColor" motion:layout_constraintEnd_toEndOf="@id/gateColor" motion:layout_constraintStart_toStartOf="@id/gateColor" motion:layout_constraintTop_toTopOf="@id/gateColor" />
+        <Constraint android:id="@id/gateColor" android:layout_width="120.0dip" android:layout_height="120.0dip" motion:layout_constraintBottom_toBottomOf="parent" motion:layout_constraintEnd_toEndOf="@id/bottomBackground" motion:layout_constraintStart_toStartOf="@id/topBackground" />
+        <Constraint android:id="@id/gateDragView" android:layout_width="0.0dip" android:layout_height="0.0dip" motion:layout_constraintBottom_toTopOf="@id/guideline11" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent" motion:layout_constraintTop_toBottomOf="@id/settings" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/vpTileAnimationEnd">
+        <Constraint android:id="@id/gateIcon" android:visibility="invisible" android:layout_width="0.0dip" android:layout_height="0.0dip" motion:layout_constraintBottom_toBottomOf="@id/gateColor" motion:layout_constraintEnd_toEndOf="@id/gateColor" motion:layout_constraintStart_toStartOf="@id/gateColor" motion:layout_constraintTop_toTopOf="@id/gateColor" />
+        <Constraint android:id="@id/vpCloseButton" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="0.0dip" android:rotation="45.0" motion:layout_constraintBottom_toBottomOf="@id/gateColor" motion:layout_constraintEnd_toEndOf="@id/gateColor" motion:layout_constraintStart_toStartOf="@id/gateColor" motion:layout_constraintTop_toTopOf="@id/gateColor" />
+        <Constraint android:id="@id/itemVpRelayCl" android:visibility="visible" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginBottom="32.0dip" android:layout_marginStart="32.0dip" motion:layout_constraintBottom_toBottomOf="@id/gateColor" motion:layout_constraintStart_toEndOf="@id/gateColor" motion:layout_constraintTop_toTopOf="@id/gateColor" />
+        <Constraint android:id="@id/itemVpCameraCl" android:visibility="visible" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginBottom="32.0dip" android:layout_marginEnd="32.0dip" motion:layout_constraintBottom_toBottomOf="@id/gateColor" motion:layout_constraintEnd_toStartOf="@id/gateColor" motion:layout_constraintTop_toTopOf="@id/gateColor" />
+        <Constraint android:id="@id/gateColor" android:layout_width="80.0dip" android:layout_height="80.0dip" motion:layout_constraintBottom_toBottomOf="parent" motion:layout_constraintEnd_toEndOf="@id/bottomBackground" motion:layout_constraintStart_toStartOf="@id/topBackground" />
+    </ConstraintSet>
+</MotionScene>

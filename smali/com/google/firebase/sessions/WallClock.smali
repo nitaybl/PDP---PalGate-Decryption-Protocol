@@ -1,0 +1,89 @@
+.class public final Lcom/google/firebase/sessions/WallClock;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Lcom/google/firebase/sessions/TimeProvider;
+
+
+# static fields
+.field public static final INSTANCE:Lcom/google/firebase/sessions/WallClock;
+
+.field private static final US_PER_MILLIS:J = 0x3e8L
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 1
+
+    new-instance v0, Lcom/google/firebase/sessions/WallClock;
+
+    invoke-direct {v0}, Lcom/google/firebase/sessions/WallClock;-><init>()V
+
+    sput-object v0, Lcom/google/firebase/sessions/WallClock;->INSTANCE:Lcom/google/firebase/sessions/WallClock;
+
+    return-void
+.end method
+
+.method private constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public currentTimeUs()J
+    .locals 4
+
+    .line 1
+    invoke-static {}, Ljava/lang/System;->currentTimeMillis()J
+
+    .line 2
+    .line 3
+    .line 4
+    move-result-wide v0
+
+    .line 5
+    const-wide/16 v2, 0x3e8
+
+    .line 6
+    .line 7
+    mul-long/2addr v0, v2
+
+    .line 8
+    return-wide v0
+.end method
+
+.method public elapsedRealtime-UwyO8pc()J
+    .locals 3
+
+    .line 1
+    sget v0, Ls7/a;->d:I
+
+    .line 2
+    .line 3
+    invoke-static {}, Landroid/os/SystemClock;->elapsedRealtime()J
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-wide v0
+
+    .line 7
+    sget-object v2, Ls7/c;->c:Ls7/c;
+
+    .line 8
+    .line 9
+    invoke-static {v0, v1, v2}, Lv3/O6;->b(JLs7/c;)J
+
+    .line 10
+    .line 11
+    .line 12
+    move-result-wide v0
+
+    .line 13
+    return-wide v0
+.end method

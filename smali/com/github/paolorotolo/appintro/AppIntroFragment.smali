@@ -1,0 +1,306 @@
+.class public final Lcom/github/paolorotolo/appintro/AppIntroFragment;
+.super Lcom/github/paolorotolo/appintro/AppIntroBaseFragment;
+.source "SourceFile"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/github/paolorotolo/appintro/AppIntroBaseFragment;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    return-void
+.end method
+
+.method public static newInstance(Lcom/github/paolorotolo/appintro/model/SliderPage;)Lcom/github/paolorotolo/appintro/AppIntroFragment;
+    .locals 4
+
+    .line 24
+    new-instance v0, Lcom/github/paolorotolo/appintro/AppIntroFragment;
+
+    invoke-direct {v0}, Lcom/github/paolorotolo/appintro/AppIntroFragment;-><init>()V
+
+    .line 25
+    new-instance v1, Landroid/os/Bundle;
+
+    invoke-direct {v1}, Landroid/os/Bundle;-><init>()V
+
+    .line 26
+    invoke-virtual {p0}, Lcom/github/paolorotolo/appintro/model/SliderPage;->getTitleString()Ljava/lang/String;
+
+    move-result-object v2
+
+    const-string v3, "title"
+
+    invoke-virtual {v1, v3, v2}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 27
+    const-string v2, "title_typeface"
+
+    invoke-virtual {p0}, Lcom/github/paolorotolo/appintro/model/SliderPage;->getTitleTypeface()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v2, v3}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 28
+    const-string v2, "title_typeface_res"
+
+    invoke-virtual {p0}, Lcom/github/paolorotolo/appintro/model/SliderPage;->getTitleTypefaceFontRes()I
+
+    move-result v3
+
+    invoke-virtual {v1, v2, v3}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
+
+    .line 29
+    const-string v2, "title_color"
+
+    invoke-virtual {p0}, Lcom/github/paolorotolo/appintro/model/SliderPage;->getTitleColor()I
+
+    move-result v3
+
+    invoke-virtual {v1, v2, v3}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
+
+    .line 30
+    const-string v2, "desc"
+
+    invoke-virtual {p0}, Lcom/github/paolorotolo/appintro/model/SliderPage;->getDescriptionString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v2, v3}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 31
+    const-string v2, "desc_typeface"
+
+    invoke-virtual {p0}, Lcom/github/paolorotolo/appintro/model/SliderPage;->getDescTypeface()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v1, v2, v3}, Landroid/os/BaseBundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 32
+    const-string v2, "desc_typeface_res"
+
+    invoke-virtual {p0}, Lcom/github/paolorotolo/appintro/model/SliderPage;->getDescTypefaceFontRes()I
+
+    move-result v3
+
+    invoke-virtual {v1, v2, v3}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
+
+    .line 33
+    const-string v2, "desc_color"
+
+    invoke-virtual {p0}, Lcom/github/paolorotolo/appintro/model/SliderPage;->getDescColor()I
+
+    move-result v3
+
+    invoke-virtual {v1, v2, v3}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
+
+    .line 34
+    const-string v2, "drawable"
+
+    invoke-virtual {p0}, Lcom/github/paolorotolo/appintro/model/SliderPage;->getImageDrawable()I
+
+    move-result v3
+
+    invoke-virtual {v1, v2, v3}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
+
+    .line 35
+    const-string v2, "bg_color"
+
+    invoke-virtual {p0}, Lcom/github/paolorotolo/appintro/model/SliderPage;->getBgColor()I
+
+    move-result p0
+
+    invoke-virtual {v1, v2, p0}, Landroid/os/BaseBundle;->putInt(Ljava/lang/String;I)V
+
+    .line 36
+    invoke-virtual {v0, v1}, Landroidx/fragment/app/E;->setArguments(Landroid/os/Bundle;)V
+
+    return-object v0
+.end method
+
+.method public static newInstance(Ljava/lang/CharSequence;ILjava/lang/CharSequence;III)Lcom/github/paolorotolo/appintro/AppIntroFragment;
+    .locals 8
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    move-object v0, p0
+
+    move v1, p1
+
+    move-object v2, p2
+
+    move v3, p3
+
+    move v4, p4
+
+    move v5, p5
+
+    .line 3
+    invoke-static/range {v0 .. v7}, Lcom/github/paolorotolo/appintro/AppIntroFragment;->newInstance(Ljava/lang/CharSequence;ILjava/lang/CharSequence;IIIII)Lcom/github/paolorotolo/appintro/AppIntroFragment;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static newInstance(Ljava/lang/CharSequence;ILjava/lang/CharSequence;IIIII)Lcom/github/paolorotolo/appintro/AppIntroFragment;
+    .locals 1
+
+    .line 14
+    new-instance v0, Lcom/github/paolorotolo/appintro/model/SliderPage;
+
+    invoke-direct {v0}, Lcom/github/paolorotolo/appintro/model/SliderPage;-><init>()V
+
+    .line 15
+    invoke-virtual {v0, p0}, Lcom/github/paolorotolo/appintro/model/SliderPage;->setTitle(Ljava/lang/CharSequence;)V
+
+    .line 16
+    invoke-virtual {v0, p1}, Lcom/github/paolorotolo/appintro/model/SliderPage;->setTitleTypefaceFontRes(I)V
+
+    .line 17
+    invoke-virtual {v0, p2}, Lcom/github/paolorotolo/appintro/model/SliderPage;->setDescription(Ljava/lang/CharSequence;)V
+
+    .line 18
+    invoke-virtual {v0, p3}, Lcom/github/paolorotolo/appintro/model/SliderPage;->setDescTypefaceFontRes(I)V
+
+    .line 19
+    invoke-virtual {v0, p4}, Lcom/github/paolorotolo/appintro/model/SliderPage;->setImageDrawable(I)V
+
+    .line 20
+    invoke-virtual {v0, p5}, Lcom/github/paolorotolo/appintro/model/SliderPage;->setBgColor(I)V
+
+    .line 21
+    invoke-virtual {v0, p6}, Lcom/github/paolorotolo/appintro/model/SliderPage;->setTitleColor(I)V
+
+    .line 22
+    invoke-virtual {v0, p7}, Lcom/github/paolorotolo/appintro/model/SliderPage;->setDescColor(I)V
+
+    .line 23
+    invoke-static {v0}, Lcom/github/paolorotolo/appintro/AppIntroFragment;->newInstance(Lcom/github/paolorotolo/appintro/model/SliderPage;)Lcom/github/paolorotolo/appintro/AppIntroFragment;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static newInstance(Ljava/lang/CharSequence;Ljava/lang/CharSequence;II)Lcom/github/paolorotolo/appintro/AppIntroFragment;
+    .locals 8
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    const/4 v1, 0x0
+
+    const/4 v3, 0x0
+
+    move-object v0, p0
+
+    move-object v2, p1
+
+    move v4, p2
+
+    move v5, p3
+
+    .line 1
+    invoke-static/range {v0 .. v7}, Lcom/github/paolorotolo/appintro/AppIntroFragment;->newInstance(Ljava/lang/CharSequence;Ljava/lang/String;Ljava/lang/CharSequence;Ljava/lang/String;IIII)Lcom/github/paolorotolo/appintro/AppIntroFragment;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static newInstance(Ljava/lang/CharSequence;Ljava/lang/String;Ljava/lang/CharSequence;Ljava/lang/String;II)Lcom/github/paolorotolo/appintro/AppIntroFragment;
+    .locals 8
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+
+    const/4 v6, 0x0
+
+    const/4 v7, 0x0
+
+    move-object v0, p0
+
+    move-object v1, p1
+
+    move-object v2, p2
+
+    move-object v3, p3
+
+    move v4, p4
+
+    move v5, p5
+
+    .line 2
+    invoke-static/range {v0 .. v7}, Lcom/github/paolorotolo/appintro/AppIntroFragment;->newInstance(Ljava/lang/CharSequence;Ljava/lang/String;Ljava/lang/CharSequence;Ljava/lang/String;IIII)Lcom/github/paolorotolo/appintro/AppIntroFragment;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+.method public static newInstance(Ljava/lang/CharSequence;Ljava/lang/String;Ljava/lang/CharSequence;Ljava/lang/String;IIII)Lcom/github/paolorotolo/appintro/AppIntroFragment;
+    .locals 1
+
+    .line 4
+    new-instance v0, Lcom/github/paolorotolo/appintro/model/SliderPage;
+
+    invoke-direct {v0}, Lcom/github/paolorotolo/appintro/model/SliderPage;-><init>()V
+
+    .line 5
+    invoke-virtual {v0, p0}, Lcom/github/paolorotolo/appintro/model/SliderPage;->setTitle(Ljava/lang/CharSequence;)V
+
+    .line 6
+    invoke-virtual {v0, p1}, Lcom/github/paolorotolo/appintro/model/SliderPage;->setTitleTypeface(Ljava/lang/String;)V
+
+    .line 7
+    invoke-virtual {v0, p2}, Lcom/github/paolorotolo/appintro/model/SliderPage;->setDescription(Ljava/lang/CharSequence;)V
+
+    .line 8
+    invoke-virtual {v0, p3}, Lcom/github/paolorotolo/appintro/model/SliderPage;->setDescTypeface(Ljava/lang/String;)V
+
+    .line 9
+    invoke-virtual {v0, p4}, Lcom/github/paolorotolo/appintro/model/SliderPage;->setImageDrawable(I)V
+
+    .line 10
+    invoke-virtual {v0, p5}, Lcom/github/paolorotolo/appintro/model/SliderPage;->setBgColor(I)V
+
+    .line 11
+    invoke-virtual {v0, p6}, Lcom/github/paolorotolo/appintro/model/SliderPage;->setTitleColor(I)V
+
+    .line 12
+    invoke-virtual {v0, p7}, Lcom/github/paolorotolo/appintro/model/SliderPage;->setDescColor(I)V
+
+    .line 13
+    invoke-static {v0}, Lcom/github/paolorotolo/appintro/AppIntroFragment;->newInstance(Lcom/github/paolorotolo/appintro/model/SliderPage;)Lcom/github/paolorotolo/appintro/AppIntroFragment;
+
+    move-result-object p0
+
+    return-object p0
+.end method
+
+
+# virtual methods
+.method public getLayoutId()I
+    .locals 1
+
+    .line 1
+    sget v0, Lcom/github/paolorotolo/appintro/R$layout;->appintro_fragment_intro:I
+
+    .line 2
+    .line 3
+    return v0
+.end method

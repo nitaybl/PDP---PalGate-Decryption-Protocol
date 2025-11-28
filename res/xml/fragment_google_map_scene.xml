@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:motion="http://schemas.android.com/apk/res-auto">
+    <Transition android:id="@id/googleMapOptionTransition" motion:constraintSetEnd="@id/googleMapOptionEnd" motion:constraintSetStart="@id/googleMapOptionStart" motion:duration="1000">
+        <KeyFrameSet />
+    </Transition>
+    <Transition android:id="@id/googleMapBluetoothTransition" motion:constraintSetEnd="@id/googleMapBluetoothEnd" motion:constraintSetStart="@id/googleMapBluetoothStart" motion:duration="1000">
+        <KeyFrameSet />
+    </Transition>
+    <ConstraintSet android:id="@id/googleMapBluetoothStart">
+        <Constraint android:id="@id/googleMapBluetoothFragment" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" android:translationY="1024.0dip" motion:layout_constraintBottom_toBottomOf="parent" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent" motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/googleMapBluetoothEnd">
+        <Constraint android:id="@id/googleMapBluetoothFragment" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="1.0" android:translationY="0.0dip" motion:layout_constraintBottom_toBottomOf="parent" motion:layout_constraintEnd_toEndOf="parent" motion:layout_constraintStart_toStartOf="parent" motion:layout_constraintTop_toTopOf="parent" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/googleMapOptionStart">
+        <Constraint android:id="@id/googleMapOptionsFragment" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="32.0dip" android:alpha="0.0" android:translationY="512.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" motion:layout_constraintBottom_toBottomOf="parent" motion:layout_constraintEnd_toStartOf="@id/googleMapGuideline" motion:layout_constraintStart_toStartOf="parent" />
+    </ConstraintSet>
+    <ConstraintSet android:id="@id/googleMapOptionEnd">
+        <Constraint android:id="@id/googleMapOptionsFragment" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginBottom="32.0dip" android:alpha="1.0" android:translationY="0.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" motion:layout_constraintBottom_toBottomOf="parent" motion:layout_constraintEnd_toStartOf="@id/googleMapGuideline" motion:layout_constraintStart_toStartOf="parent" motion:layout_constraintTop_toBottomOf="@id/mapsSearchView" />
+    </ConstraintSet>
+</MotionScene>

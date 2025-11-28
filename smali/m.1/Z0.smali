@@ -1,0 +1,7 @@
+.class public abstract Lm/Z0;
+.super Lm/z0;
+.source "SourceFile"
+
+
+# static fields
+.field public static final synthetic a:I

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" android:id="@id/constraintLayout2" android:background="#ff353435" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="24.0sp" android:textColor="@color/white" android:id="@id/widgetTutorialTv" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="16.0dip" android:text="TextView" android:maxLines="1" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <com.bluegate.app.utils.MyVideoView android:id="@id/widgetVideoView" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="32.0dip" android:layout_marginBottom="32.0dip" app:layout_constraintBottom_toTopOf="@id/guideline2" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/widgetTutorialTv" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/guideline2" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintGuide_percent="0.9" />
+</androidx.constraintlayout.widget.ConstraintLayout>

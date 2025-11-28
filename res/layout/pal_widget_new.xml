@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:theme="@style/ThemeOverlay.Androidpalgate.AppWidgetContainer" android:orientation="vertical" android:background="@android:color/transparent" android:padding="@dimen/widget_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/pal_widget_frame" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="5.0">
+        <ImageView android:layout_gravity="center" android:id="@id/widgetColor" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_circle_widget" android:contentDescription="@string/widget_image" android:translationY="4.0dip" />
+        <ImageView android:layout_gravity="center" android:id="@id/widgetIcon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="8.0dip" android:src="@drawable/ic_barrier_widget" android:contentDescription="@string/widget_image" android:translationY="4.0dip" android:scaleX="0.6" android:scaleY="0.6" />
+        <RelativeLayout android:layout_gravity="center" android:id="@id/progressBar_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ProgressBar android:id="@id/widget_progressBar" android:layout_width="fill_parent" android:layout_height="fill_parent" android:translationY="4.0dip" style="@android:style/Widget.DeviceDefault.ProgressBar" />
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center" android:id="@id/widgetInactive" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_cancel_widget" android:alpha="0.7" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/pal_widget_text_frame" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="2.0">
+        <TextView android:textSize="12.0sp" android:textColor="?appWidgetTextColor" android:gravity="center" android:id="@id/appwidget_text" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/appwidget_text" android:lines="1" android:shadowColor="#ff393939" android:shadowDx="1.5" android:shadowDy="1.3" android:shadowRadius="1.6" android:contentDescription="@string/appwidget_text" />
+    </FrameLayout>
+</LinearLayout>

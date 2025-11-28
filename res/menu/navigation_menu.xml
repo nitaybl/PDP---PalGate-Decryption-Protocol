@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/ic_settings_add_new_gate" android:id="@id/settings_add_new_gate" android:title="Add New Gate" />
+    <item android:icon="@drawable/settings_link_device" android:id="@id/settings_linked_devices" android:title="Link Device" />
+    <item android:icon="@drawable/ic_settings_language" android:id="@id/settings_change_language" android:title="Language" />
+    <item android:icon="@drawable/ic_tutorial" android:id="@id/settings_tutorial" android:title="Tutorial" />
+    <item android:icon="@drawable/ic_question" android:id="@id/settings_legend" android:title="Legend" />
+    <item android:icon="@drawable/ic_refresh_arrow" android:id="@id/settings_refresh" android:title="Refresh" />
+    <item android:icon="@drawable/ic_settings_about_us" android:id="@id/settings_about_us" android:title="About Us" />
+    <item android:icon="@drawable/ic_settings_version" android:id="@id/settings_version" android:title="Version" />
+</menu>

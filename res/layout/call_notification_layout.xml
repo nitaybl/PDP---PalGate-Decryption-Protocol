@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/callNotidMainLl" android:background="@color/dark_grey" android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="140.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/callNotifTextLl" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/callNotifInnerTextLl" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.85">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/callNotifName" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Caller's Name" android:layout_marginStart="8.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="@color/white" android:id="@id/callNotifType" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Incoming Call" android:layout_marginStart="8.0dip" />
+        </LinearLayout>
+        <FrameLayout android:id="@id/callNotifIconFl" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="8.0dip" android:layout_marginEnd="8.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/callNotifIconColor" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_circle_widget" android:contentDescription="@string/widget_image" />
+            <ImageView android:id="@id/callNotifGateIcon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_key_36dp" android:scaleType="fitCenter" android:scaleX="0.5" android:scaleY="0.5" />
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/callNotifBtnsLl" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="5.0dip" android:paddingEnd="5.0dip">
+        <Button android:textColor="@color/white" android:id="@id/callNotifBtnDecline" android:layout_width="0.0dip" android:layout_height="60.0dip" android:text="Decline" android:layout_weight="0.5" android:layout_marginEnd="5.0dip" android:backgroundTint="@android:color/holo_red_light" />
+        <Button android:textColor="@color/white" android:id="@id/callNotifBtnAnswer" android:layout_width="0.0dip" android:layout_height="60.0dip" android:text="Answer" android:layout_weight="0.5" android:layout_marginStart="5.0dip" android:backgroundTint="@color/approval_green" />
+    </LinearLayout>
+</LinearLayout>

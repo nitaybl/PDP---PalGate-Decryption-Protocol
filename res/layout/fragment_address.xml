@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/dark_grey" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.appcompat.widget.SearchView android:id="@id/addressSearchView" android:background="@color/colorAccent" android:focusable="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="50.0dip" app:searchIcon="@drawable/baseline_search_24" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/autoCompleteRecycler" android:layout_width="fill_parent" android:layout_height="250.0dip" />
+</LinearLayout>

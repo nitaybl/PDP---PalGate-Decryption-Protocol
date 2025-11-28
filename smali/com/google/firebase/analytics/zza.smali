@@ -1,0 +1,104 @@
+.class final Lcom/google/firebase/analytics/zza;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+# interfaces
+.implements Ljava/util/concurrent/Callable;
+
+
+# annotations
+.annotation system Ldalvik/annotation/Signature;
+    value = {
+        "Ljava/lang/Object;",
+        "Ljava/util/concurrent/Callable<",
+        "Ljava/lang/String;",
+        ">;"
+    }
+.end annotation
+
+
+# instance fields
+.field private final synthetic zza:Lcom/google/firebase/analytics/FirebaseAnalytics;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/firebase/analytics/FirebaseAnalytics;)V
+    .locals 0
+
+    .line 1
+    iput-object p1, p0, Lcom/google/firebase/analytics/zza;->zza:Lcom/google/firebase/analytics/FirebaseAnalytics;
+
+    .line 2
+    .line 3
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final call()Ljava/lang/Object;
+    .locals 4
+
+    .line 1
+    iget-object v0, p0, Lcom/google/firebase/analytics/zza;->zza:Lcom/google/firebase/analytics/FirebaseAnalytics;
+
+    .line 2
+    .line 3
+    invoke-static {v0}, Lcom/google/firebase/analytics/FirebaseAnalytics;->zza(Lcom/google/firebase/analytics/FirebaseAnalytics;)Lcom/google/android/gms/internal/measurement/g0;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object v0
+
+    .line 7
+    invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 8
+    .line 9
+    .line 10
+    new-instance v1, Lcom/google/android/gms/internal/measurement/U;
+
+    .line 11
+    .line 12
+    invoke-direct {v1}, Lcom/google/android/gms/internal/measurement/U;-><init>()V
+
+    .line 13
+    .line 14
+    .line 15
+    new-instance v2, Lcom/google/android/gms/internal/measurement/s0;
+
+    .line 16
+    .line 17
+    const/4 v3, 0x5
+
+    .line 18
+    invoke-direct {v2, v0, v1, v3}, Lcom/google/android/gms/internal/measurement/s0;-><init>(Lcom/google/android/gms/internal/measurement/g0;Lcom/google/android/gms/internal/measurement/U;I)V
+
+    .line 19
+    .line 20
+    .line 21
+    invoke-virtual {v0, v2}, Lcom/google/android/gms/internal/measurement/g0;->e(Lcom/google/android/gms/internal/measurement/d0;)V
+
+    .line 22
+    .line 23
+    .line 24
+    const-wide/32 v2, 0x1d4c0
+
+    .line 25
+    .line 26
+    .line 27
+    invoke-virtual {v1, v2, v3}, Lcom/google/android/gms/internal/measurement/U;->d(J)Ljava/lang/String;
+
+    .line 28
+    .line 29
+    .line 30
+    move-result-object v0
+
+    .line 31
+    return-object v0
+.end method

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/widgetColor" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/gate_icon_3" android:scaleType="fitCenter" android:layout_centerInParent="true" android:contentDescription="@string/widget_image" android:layout_alignParentStart="true" />
+    <ImageView android:id="@id/widgetIcon" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/gate_icon_3" android:scaleType="centerInside" android:layout_centerInParent="true" android:contentDescription="@string/widget_image" android:layout_alignParentStart="true" />
+    <ImageView android:id="@id/widgetClickView" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/widgetInactive" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/ic_cancel_black_24dp" android:alpha="0.7" />
+    <RelativeLayout android:id="@id/progressBar_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="0.0dip" android:layout_alignTop="@id/widgetClickView" android:layout_marginStart="0.0dip" android:layout_marginEnd="0.0dip" android:layout_alignStart="@id/widgetClickView" android:layout_alignEnd="@id/widgetClickView">
+        <ProgressBar android:id="@id/widget_progressBar" android:layout_width="fill_parent" android:layout_height="fill_parent" style="@android:style/Widget.DeviceDefault.ProgressBar" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/warningContainer" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true">
+        <ImageView android:id="@id/widgetWarning" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="16.0dip" android:src="@drawable/baseline_warning_24" android:scaleType="centerInside" android:layout_centerInParent="true" android:contentDescription="@string/warning" />
+    </RelativeLayout>
+    <TextView android:textSize="24.0sp" android:textColor="#ffffffff" android:gravity="center" android:id="@id/appwidget_text" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/appwidget_text" android:maxLines="2" android:lines="2" android:singleLine="false" android:layout_centerVertical="true" android:contentDescription="@string/appwidget_text" android:fontFamily="sans-serif" android:textAlignment="gravity" android:layout_toEndOf="@id/widgetIcon" android:layout_alignParentEnd="true" />
+</RelativeLayout>
